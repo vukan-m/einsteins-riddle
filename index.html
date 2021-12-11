@@ -2,20 +2,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <title>Einstein's Riddle</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script>
-    function action(btn) {
-        btn.style.display="none";
-    }
-</script>
+    <script src="index.js"></script>
 </head>
 <body>
   <h1>Einstein's Riddle</h1>
-    <h4>Click on words to remove them from the table.</h4>
+  <h4>Click on words to remove them from the table.</h4>
   
-    <!--Table with riddle elements-->
-    <table>
+  <!--Table with riddle elements-->
+  <table>
     <tr>
       <th>Color of the house
       </th>
@@ -87,29 +84,30 @@
       </td>
     </tr>
   </table>
+  <button onclick="reset()" onmousedown="btnChange(this)">Reset</button>
   <div>
-  <ul>
-    <li onclick="action(this)">The Brit lives in the red house</li>
-    <li onclick="action(this)">The Swed has a dog</li>
-    <li onclick="action(this)">The Dane drinks tea</li>
-    <li onclick="action(this)">The green house is on the left of the white house</li>
-    <li onclick="action(this)">The green house owner drinks coffee</li>
-  </ul>
-  <ul>
-    <li onclick="action(this)">The person who smokes Pall Mall owns a bird</li>
-    <li onclick="action(this)">The owner of the yellow house smokes Dunhill</li>
-    <li onclick="action(this)">The person living in the middle house drinks milk</li>
-    <li onclick="action(this)">The Norwegian lives in the first house</li>
-    <li onclick="action(this)">The person who smokes Blend lives next to the person who owns a cat</li>
-  </ul>
-  <ul>
-    <li onclick="action(this)">The person who owns a horse lives next to the person who smokes Dunhill</li>
-    <li onclick="action(this)">The person who smokes Blue Master drinks beer</li>
-    <li onclick="action(this)">The German smokes Prince</li>
-    <li onclick="action(this)">The Norwegian lives next to the blue house</li>
-    <li onclick="action(this)">The person who smokes Blend has a neighbour who drinks water</li>
-  </ul>
-</div>
-    <h2>Who owns a fish?</h2>
+    <ul>
+      <li onclick="action(this)">The Brit lives in the red house</li>
+      <li onclick="action(this)">The Swed has a dog</li>
+      <li onclick="action(this)">The Dane drinks tea</li>
+      <li onclick="action(this)">The green house is on the left of the white house</li>
+      <li onclick="action(this)">The green house owner drinks coffee</li>
+    </ul>
+    <ul>
+      <li onclick="action(this)">The person who smokes Pall Mall owns a bird</li>
+      <li onclick="action(this)">The owner of the yellow house smokes Dunhill</li>
+      <li onclick="action(this)">The person living in the middle house drinks milk</li>
+      <li onclick="action(this)">The Norwegian lives in the first house</li>
+      <li onclick="action(this)">The person who smokes Blend lives next to the person who owns a cat</li>
+    </ul>
+    <ul>
+      <li onclick="action(this)">The person who owns a horse lives next to the person who smokes Dunhill</li>
+      <li onclick="action(this)">The person who smokes Blue Master drinks beer</li>
+      <li onclick="action(this)">The German smokes Prince</li>
+      <li onclick="action(this)">The Norwegian lives next to the blue house</li>
+      <li onclick="action(this)">The person who smokes Blend has a neighbour who drinks water</li>
+    </ul>
+  </div>
+  <h2>Who owns a fish?</h2>
 </body>
 </html>
